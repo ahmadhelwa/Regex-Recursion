@@ -4,19 +4,19 @@
 
 /* Write a function that take a string and return true if the string only contain uppercase and lowercase
 characters (no numbers and symbols) and it should end with capital A else return false */
-
+//
 function capitalA(s){
-  let x = /[a-zA-Z-]+ +[a-zA-Z-]+ +A$/.test(s)   ;
+
+  let x = /[a-zA-Z]+ +[a-zA-Z]+ +A$/.test(s)   ;
     
     return x;
 }
 
-console.log(x)
 /* Write a function that take a string and return true if the the sting is following the emails pattern
 which end with io (example@example.io) */
 
 function ioEmail(email){
-   let  emailvalid =  /^[a-zA-Z0-9]+@[a-zA-Z0-9-]+(?:\.[io]+)*$/.test(email) ;
+   let  emailvalid = (/^[a-zA-Z0-9]+@[a-zA-Z0-9]+(?:\.[io])/.test(email)) ;
    return emailvalid ;
 }
 
@@ -28,11 +28,7 @@ required extention are jpg, jpeg and png.
 */
 
 function imagesSearcher(text){
-    let arr = [];
-
-
-
-
+   
 
     return arr
 }
